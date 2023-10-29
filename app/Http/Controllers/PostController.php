@@ -11,7 +11,7 @@ class PostController extends Controller
     {
         return view('posts', [
             'title' => 'Post',
-            'posts' => Post::getAll()
+            'posts' => Post::all()
         ]);
     }
 
@@ -21,7 +21,7 @@ class PostController extends Controller
             'subPost',
             [
                 'title' => 'Single Post',
-                'post' => Post::getPost($slug)
+                'post' => Post::find($slug)
             ]
         );
     }
