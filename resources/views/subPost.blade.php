@@ -2,9 +2,9 @@
 
 @section('container')
     <article class="mb-4">
-        <h2>{{ $post['title'] }}</h2>
+        <h2>{{ $post->title }}</h2>
         <p>{{ $post['author'] }}</p>
-        <p>{{ $post['body'] }}</p>
+        <p>{!! $post['body'] !!}</p>
     </article>
 
     <a href="/posts"> Back to Posts</a>

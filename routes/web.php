@@ -22,4 +22,4 @@ Route::get('/about', [AboutController::class, 'index']);
 
 Route::get('/posts', [PostController::class, 'index']);
 
-Route::get('posts/{slug}', [PostController::class, 'getPost']);
+Route::get('posts/{posts:slug}', [PostController::class, 'getPost']);
